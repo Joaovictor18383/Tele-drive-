@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/icon-192.png" width="92" alt="Teledrive">
+  <img src="docs/teledrive-logo.svg" width="108" height="108" alt="Logotipo do Teledrive">
   <h1>Teledrive</h1>
   <p>Seu cofre pessoal para organizar arquivos cifrados no Telegram.</p>
   <p>
