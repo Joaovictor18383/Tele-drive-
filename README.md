@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="docs/teledrive-logo.png" width="108" height="108" alt="Logotipo do Teledrive">
-  <h1>Teledrive</h1>
+  <img src="docs/teledrive-logo.png" width="108" height="108" alt="Logotipo do Tele Drive">
+  <h1>Tele Drive</h1>
   <p>Seu cofre pessoal para organizar arquivos cifrados no Telegram.</p>
   <p>
-    <a href="#downloads-do-teledrive"><strong>Windows</strong></a> ·
+    <a href="#downloads-do-tele-drive"><strong>Windows</strong></a> ·
     <a href="#android"><strong>Android</strong></a> ·
     <a href="#instalação-local">Desenvolvimento</a> ·
     <a href="#publicação">Hospedagem</a>
@@ -11,15 +11,15 @@
   <a href="https://github.com/Joaovictor18383/Tele-drive-/actions/workflows/checks.yml"><img alt="Verificações" src="https://github.com/Joaovictor18383/Tele-drive-/actions/workflows/checks.yml/badge.svg"></a>
 </div>
 
-## Downloads do Teledrive
+## Downloads do Tele Drive
 
 | Plataforma | Download |
 | --- | --- |
 | Windows 10 e 11 · 64 bits | [TeledriveSetup.exe](https://github.com/Joaovictor18383/Tele-drive-/releases/latest/download/TeledriveSetup.exe) |
 | Android 7 ou superior | [Teledrive-Android.apk](https://github.com/Joaovictor18383/Tele-drive-/releases/latest/download/Teledrive-Android.apk) |
-| Navegador | [Abrir CloudVault Web](https://cloudvault-web-nu.vercel.app/) |
+| Navegador | [Abrir Tele Drive](https://cloudvault-web-nu.vercel.app/) |
 
-Na primeira vez, crie uma conta com nome e senha e autorize o Telegram neste dispositivo. Depois, entre com o nome e a senha do CloudVault. A senha mestra continua protegendo o cofre.
+Na primeira vez, crie uma conta com nome e senha e autorize o Telegram neste dispositivo. Depois, entre com o nome e a senha do Tele Drive. A senha mestra continua protegendo o cofre.
 
 O instalador para PC abre a edição web em janela própria. Ele verifica atualizações assinadas e as aplica ao fechar. O APK usa a edição web e recebe atualização de interface pelo site. O Android pede confirmação para instalar novas versões do pacote. [Versão atual](https://github.com/Joaovictor18383/Tele-drive-/releases/latest)
 
