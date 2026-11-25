@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="docs/teledrive-logo.svg" width="108" height="108" alt="Logotipo do Teledrive">
+  <img src="docs/teledrive-logo.png" width="108" height="108" alt="Logotipo do Teledrive">
   <h1>Teledrive</h1>
   <p>Seu cofre pessoal para organizar arquivos cifrados no Telegram.</p>
   <p>
@@ -21,7 +21,7 @@
 
 Na primeira vez, crie uma conta com nome e senha e autorize o Telegram neste dispositivo. Depois, entre com o nome e a senha do CloudVault. A senha mestra continua protegendo o cofre.
 
-O instalador para PC abre a edição web em janela própria. Ele verifica atualizações assinadas e as aplica ao fechar. O APK usa a edição web e recebe atualização de interface pelo site. O Android pede confirmação para instalar novas versões do pacote. [Versão atual e somas SHA-256](https://github.com/Joaovictor18383/Tele-drive-/releases/latest)
+O instalador para PC abre a edição web em janela própria. Ele verifica atualizações assinadas e as aplica ao fechar. O APK usa a edição web e recebe atualização de interface pelo site. O Android pede confirmação para instalar novas versões do pacote. [Versão atual](https://github.com/Joaovictor18383/Tele-drive-/releases/latest)
 
 ## O que você pode fazer
 
