@@ -15,8 +15,8 @@
 
 | Plataforma | Download |
 | --- | --- |
-| Windows 10 e 11 · 64 bits | [TeledriveSetup.exe](https://github.com/Joaovictor18383/Tele-drive-/releases/latest/download/TeledriveSetup.exe) |
-| Android 7 ou superior | [Teledrive-Android.apk](https://github.com/Joaovictor18383/Tele-drive-/releases/latest/download/Teledrive-Android.apk) |
+| Windows 10 e 11 · 64 bits | [Tele-Drive.exe](https://github.com/Joaovictor18383/Tele-drive-/releases/latest/download/Tele-Drive.exe) |
+| Android 7 ou superior | [Tele-Drive.apk](https://github.com/Joaovictor18383/Tele-drive-/releases/latest/download/Tele-Drive.apk) |
 | Navegador | [Abrir Tele Drive](https://cloudvault-web-nu.vercel.app/) |
 
 Na primeira vez, crie uma conta com nome e senha e autorize o Telegram neste dispositivo. Depois, entre com o nome e a senha do Tele Drive. A senha mestra continua protegendo o cofre.
