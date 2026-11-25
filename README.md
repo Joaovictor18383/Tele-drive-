@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="public/icon-192.png" width="92" alt="CloudVault">
-  <h1>CloudVault · Tele Drive</h1>
+  <img src="public/icon-192.png" width="92" alt="Teledrive">
+  <h1>Teledrive</h1>
   <p>Seu cofre pessoal para organizar arquivos cifrados no Telegram.</p>
   <p>
-    <a href="#downloads-do-cloudvault"><strong>Windows</strong></a> ·
+    <a href="#downloads-do-teledrive"><strong>Windows</strong></a> ·
     <a href="#android"><strong>Android</strong></a> ·
     <a href="#instalação-local">Desenvolvimento</a> ·
     <a href="#publicação">Hospedagem</a>
@@ -11,12 +11,12 @@
   <a href="https://github.com/Joaovictor18383/Tele-drive-/actions/workflows/checks.yml"><img alt="Verificações" src="https://github.com/Joaovictor18383/Tele-drive-/actions/workflows/checks.yml/badge.svg"></a>
 </div>
 
-## Downloads do CloudVault
+## Downloads do Teledrive
 
 | Plataforma | Download |
 | --- | --- |
-| Windows 10 e 11 · 64 bits | [CloudVaultSetup.exe](https://github.com/Joaovictor18383/Tele-drive-/releases/latest/download/CloudVaultSetup.exe) |
-| Android 7 ou superior | [CloudVault-Android.apk](https://github.com/Joaovictor18383/Tele-drive-/releases/latest/download/CloudVault-Android.apk) |
+| Windows 10 e 11 · 64 bits | [TeledriveSetup.exe](https://github.com/Joaovictor18383/Tele-drive-/releases/latest/download/TeledriveSetup.exe) |
+| Android 7 ou superior | [Teledrive-Android.apk](https://github.com/Joaovictor18383/Tele-drive-/releases/latest/download/Teledrive-Android.apk) |
 | Navegador | [Abrir CloudVault Web](https://cloudvault-web-nu.vercel.app/) |
 
 Na primeira vez, crie uma conta com nome e senha e autorize o Telegram neste dispositivo. Depois, entre com o nome e a senha do CloudVault. A senha mestra continua protegendo o cofre.
