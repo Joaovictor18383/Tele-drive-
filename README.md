@@ -1,15 +1,27 @@
 <div align="center">
   <img src="public/icon-192.png" width="92" alt="CloudVault">
   <h1>CloudVault · Tele Drive</h1>
-  <p>Seu cofre pessoal para organizar arquivos cifrados nas Mensagens Salvas do Telegram.</p>
+  <p>Seu cofre pessoal para organizar arquivos cifrados no Telegram.</p>
   <p>
-    <a href="#executável-para-windows"><strong>Windows</strong></a> ·
+    <a href="#downloads-do-cloudvault"><strong>Windows</strong></a> ·
     <a href="#android"><strong>Android</strong></a> ·
     <a href="#instalação-local">Desenvolvimento</a> ·
     <a href="#publicação">Hospedagem</a>
   </p>
   <a href="https://github.com/Joaovictor18383/Tele-drive-/actions/workflows/checks.yml"><img alt="Verificações" src="https://github.com/Joaovictor18383/Tele-drive-/actions/workflows/checks.yml/badge.svg"></a>
 </div>
+
+## Downloads do CloudVault
+
+| Plataforma | Download |
+| --- | --- |
+| Windows 10 e 11 · 64 bits | [CloudVaultSetup.exe](https://github.com/Joaovictor18383/Tele-drive-/releases/latest/download/CloudVaultSetup.exe) |
+| Android 7 ou superior | [CloudVault-Android.apk](https://github.com/Joaovictor18383/Tele-drive-/releases/latest/download/CloudVault-Android.apk) |
+| Navegador | [Abrir CloudVault Web](https://cloudvault-web-nu.vercel.app/) |
+
+Na primeira vez, crie uma conta com nome e senha e autorize o Telegram neste dispositivo. Depois, entre com o nome e a senha do CloudVault. A senha mestra continua protegendo o cofre.
+
+O instalador para PC abre a edição web em janela própria. Ele verifica atualizações assinadas e as aplica ao fechar. O APK usa a edição web e recebe atualização de interface pelo site. O Android pede confirmação para instalar novas versões do pacote. [Versão atual e somas SHA-256](https://github.com/Joaovictor18383/Tele-drive-/releases/latest)
 
 ## O que você pode fazer
 
@@ -20,9 +32,9 @@
 
 O CloudVault é um projeto independente que usa a API do Telegram. O espaço utilizado é calculado pelos arquivos do cofre e os limites do Telegram continuam aplicáveis.
 
-## Executável para Windows
+## Edição clássica para Windows
 
-**[Baixar CloudVault para Windows](https://github.com/Joaovictor18383/Tele-drive-/releases)**
+**[Baixar a edição clássica para Mensagens Salvas](https://github.com/Joaovictor18383/Tele-drive-/releases/tag/v1.0.0)**
 
 Abra `release/CloudVault.exe` no Windows 10 ou 11 de 64 bits com o Microsoft Edge WebView2 Runtime. O executável inclui a interface, a API local e o runtime do Node.js. A interface abre em uma janela própria do CloudVault. Na primeira execução, os componentes são extraídos para `%LOCALAPPDATA%\CloudVault`.
 
@@ -38,9 +50,7 @@ No GitHub, a ação [Publicar Windows](https://github.com/Joaovictor18383/Tele-d
 
 ## Android
 
-A edição Android usa o aplicativo web instalável (PWA) e roda em janela própria após a instalação. Precisa de uma instância CloudVault hospedada com HTTPS e credenciais do Telegram configuradas. Na primeira visita, abra a URL dessa instância no Chrome e escolha **Instalar app** ou **Adicionar à tela inicial → Instalar**.
-
-Consulte o [guia para Android e geração de APK](android/README.md) para configurar o servidor, validar a instalação e empacotar a mesma edição em um APK assinado.
+O APK oficial deste repositório está disponível na seção de downloads. Ele usa o cofre dedicado da edição web, que é separado do cofre em Mensagens Salvas da edição clássica.
 
 ## Instalação local
 
