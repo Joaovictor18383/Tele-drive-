@@ -1,0 +1,70 @@
+name: Publicar Windows
+
+on:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: Criar uma prévia em Releases com a versão do package.json
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-2025
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run build:windows
+      - name: Gerar notas e soma de verificação
+        shell: pwsh
+        run: |
+          $version = node --print 'require("./package.json").version'
+          if ($version -notmatch '^\d+\.\d+\.\d+$') { throw 'Versão inválida em package.json.' }
+          Set-Content -Path 'release/version.txt' -Value $version
+          $hash = (Get-FileHash -LiteralPath 'release/CloudVault.exe' -Algorithm SHA256).Hash.ToLowerInvariant()
+          Set-Content -Path 'release/SHA256SUMS.txt' -Value "$hash  CloudVault.exe"
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: CloudVault-Windows
+          path: |
+            release/CloudVault.exe
+            release/SHA256SUMS.txt
+            release/version.txt
+          if-no-files-found: error
+
+  publish:
+    if: inputs.publish && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: CloudVault-Windows
+          path: release
+      - name: Publicar prévia
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          version="$(tr -d '\r\n' < release/version.txt)"
+          [[ "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]
+          cd release
+          sha256sum --check SHA256SUMS.txt
+          gh release create "v$version" CloudVault.exe SHA256SUMS.txt \
+            --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
+            --title "CloudVault $version · Windows" --prerelease \
+            --notes 'Prévia para Windows 10/11 x64. Abra o CloudVault.exe e siga o assistente de conexão ao Telegram. O arquivo SHA256SUMS.txt permite verificar o download.'

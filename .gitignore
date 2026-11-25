@@ -1,0 +1,15 @@
+node_modules/
+.npm-cache/
+dist/
+release/
+.env
+.env.*
+!.env.example
+.cloudvault-sessions/
+.cloudvault-dev/
+*.log
+/.bubblewrap/
+*.keystore
+*.jks
+*.apk
+*.aab
