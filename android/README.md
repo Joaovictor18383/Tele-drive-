@@ -12,7 +12,7 @@ O Android usa a mesma interface e criptografia local da edição web. A aplicaç
    ```
 
 3. No Chrome para Android, abra o endereço da sua instância. No menu, escolha **Instalar app** ou **Adicionar à tela inicial → Instalar**.
-4. Abra o CloudVault pelo ícone e conclua o login oficial do Telegram. Quando aparecer o QR, use outro aparelho em que o Telegram já esteja conectado à mesma conta e leia o código em **Configurações → Dispositivos → Conectar dispositivo**. Com um só celular, espelhe a tela do CloudVault em um monitor que só você controla e use a câmera do Telegram para ler o código.
+4. Abra o CloudVault pelo ícone e conclua o login oficial do Telegram. Quando aparecer o QR, use outro aparelho em que o Telegram já esteja conectado à mesma conta e leia o código em **Configurações → Dispositivos → Conectar dispositivo**. Com um só celular, mantenha uma captura do QR visível em um computador de confiança e leia-a antes de o código expirar. Apague a captura após a conexão.
 5. Desbloqueie o cofre com sua senha mestra. Em **Meu Drive**, use **Enviar arquivos** para validar o envio e faça o download de um arquivo para conferir.
 
 ## Gerar o APK assinado

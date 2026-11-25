@@ -34,6 +34,8 @@ O executável usa MTProto diretamente para confirmar a identidade. A instalaçã
 
 Para atualizar o executável, feche o CloudVault e execute `npm ci` seguido de `npm run build:windows` em Windows x64 com o .NET Framework 4.8 e o WebView2 Runtime. O empacotamento testa a API e a interface na janela incorporada antes de substituir `release/CloudVault.exe`.
 
+No GitHub, a ação [Publicar Windows](https://github.com/Joaovictor18383/Tele-drive-/actions/workflows/windows.yml) também gera o executável e o SHA-256. Para criar uma nova prévia em Releases, atualize a versão em `package.json` e `package-lock.json` e rode a ação em `main` com `publish` marcado.
+
 ## Android
 
 A edição Android usa o aplicativo web instalável (PWA) e roda em janela própria após a instalação. Precisa de uma instância CloudVault hospedada com HTTPS e credenciais do Telegram configuradas. Na primeira visita, abra a URL dessa instância no Chrome e escolha **Instalar app** ou **Adicionar à tela inicial → Instalar**.
