@@ -21,6 +21,8 @@
 
 Na primeira vez, crie uma conta com nome e senha e autorize o Telegram neste dispositivo. Depois, entre com o nome e a senha do Tele Drive. A senha mestra continua protegendo o cofre.
 
+Na versão **1.1.14**, o menu da área vazia inclui **Bloco de notas**, com textos salvos no cofre, e os envios ganham miniaturas criptografadas de imagens e vídeos compatíveis. Para reabrir o cofre sem repetir a senha mestra, marque **Desbloquear automaticamente neste aparelho** em um dispositivo pessoal com bloqueio de tela. [Confira os testes e limites](docs/VALIDACAO-1.1.14.md).
+
 O instalador para PC abre a edição web em janela própria. Ele verifica atualizações assinadas e as aplica ao fechar. O APK usa a edição web e recebe atualização de interface pelo site. O Android pede confirmação para instalar novas versões do pacote. [Versão atual](https://github.com/Joaovictor18383/Tele-drive-/releases/latest)
 
 ## O que você pode fazer
